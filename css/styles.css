@@ -1,0 +1,161 @@
+/* 
+    =========================================================================
+    HOJA DE ESTILOS PRINCIPAL - PROYECTO NANAE WEB
+    =========================================================================
+    Descripción: 
+    Este archivo contiene las reglas personalizadas de CSS para el sitio.
+    La mayoría de los estilos están en index.html usando clases de TailwindCSS,
+    por lo que aquí solo se incluyen fuentes puntuales, animaciones personalizadas
+    y efectos especiales.
+    =========================================================================
+*/
+
+/* --- 1. IMPORTACIÓN DE FUENTES WEB --- */
+/* Tipografías base del sitio: 
+    - Syncopate: Usada para títulos de estilo Y2K (año 2000) o futuristas.
+    - Space Grotesk: Usada para textos generales por su aspecto moderno. */
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Space+Grotesk:wght@300;400;600&display=swap");
+
+/* Tipografía elegante para el nombre 'Nanae' (Logo y letras tipo manuscrito) */
+@import url("https://fonts.googleapis.com/css2?family=Sarina&display=swap");
+
+/* --- 2. ESTILOS GLOBALES BASE --- */
+body {
+    /* Se aplica Space Grotesk como fuente por defecto para todo el documento */
+    font-family: "Space Grotesk", sans-serif;
+
+    /* Gradiente radial fijo como fondo principal del sitio, usando tonos azules muy oscuros */
+    background-image: radial-gradient(
+        circle at 50% 0%,
+        #0a1945 0%,
+        #02040a 60%
+    );
+    background-attachment: fixed;
+}
+
+/* --- 3. CLASES DE TIPOGRAFÍA PERSONALIZADAS --- */
+/* Aplica la fuente cursiva 'Sarina' para acentos decorativos */
+.font-sarina {
+    font-family: "Sarina", cursive;
+}
+
+/* Aplica la fuente futurista 'Syncopate' para sub-títulos y secciones */
+.font-y2k {
+    font-family: "Syncopate", sans-serif;
+}
+
+/* --- 4. EFECTOS ESPECIALES VISUALES --- */
+
+/* Efecto de resplandor (glow) neón al texto, para estilo cibernético o Y2K */
+.y2k-glow {
+    text-shadow:
+        0 0 15px rgba(125, 211, 252, 0.6),
+        /* Resplandor interior suave color celeste */ 0 0 30px
+            rgba(14, 165, 233, 0.4); /* Resplandor exterior difuso color azul más fuerte */
+    will-change: text-shadow; /* Optimización de rendimiento: avisa al navegador que esto cambiará */
+}
+
+/* Efecto de vidrio esmerilado (Glassmorphism) 
+   Usado para las tarjetas de canciones, videos, equipo y navbar. */
+.glass-panel {
+    background: rgba(10, 15, 36, 0.4); /* Fondo semi-transparente oscuro */
+    backdrop-filter: blur(
+        16px
+    ); /* Desenfoque de lo que hay detrás (soporte navegadores modernos) */
+    -webkit-backdrop-filter: blur(
+        16px
+    ); /* Soporte de desenfoque exclusivo para Safari */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); /* Sombra difusa hacia abajo para dar profundidad 3D */
+}
+
+/* Borde dinámico con efecto luminoso neón para los avatares e íconos del equipo */
+.y2k-border {
+    border: 1px solid #1e40af; /* Borde azul base sólido */
+    box-shadow:
+        0 0 10px #1e40af inset,
+        /* Sombra apuntando hacia el centro (interior) verde oscuro/azul */ 0 0
+            10px #1e40af; /* Sombra apuntando hacia afuera (exterior) */
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Transición elástica y súper fluida (rebote) */
+}
+
+/* Estado 'hover' (pasar el ratón por encima) para el efecto superior */
+.y2k-border:hover {
+    border-color: #38bdf8; /* El borde cambia a un celeste/azul más claro */
+    box-shadow:
+        0 0 15px #38bdf8 inset,
+        0 0 25px rgba(56, 189, 248, 0.6),
+        0 0 45px rgba(56, 189, 248, 0.3); /* Un brillo mucho más intenso */
+    transform: scale(
+        1.08
+    ); /* Aumenta tamaño ligeramente haciendo el 'pop' visual */
+}
+
+/* Efecto de texto con relieve 3D exagerado. 
+   Usado principalmente para dar robustez al título "Nanae" principal. */
+.text-relief {
+    text-shadow:
+        3px 3px 0px #1e40af,
+        /* Primera fase del relieve sólido (Azul oscuro) */ 6px 6px 0px #02040a,
+        /* Segunda fase del relieve sólido (Casi negro) para separar del fondo */
+        10px 10px 20px rgba(0, 0, 0, 0.9),
+        /* Sombra súper oscura y larga hacia abajo */ 0px 0px 40px
+            rgba(125, 211, 252, 0.4); /* Resplandor difuso general para destacar */
+    will-change: text-shadow; /* Optimización */
+}
+
+/* --- 5. UTILIDADES DE INTERFAZ GENERALES --- */
+
+/* Ocultar barra de desplazamiento (scrollbar) para contenedores con desplazamiento horizontal
+   (por ejemplo, el carrusel de canciones), manteniendo intacta la funcionalidad táctil */
+.hide-scrollbar::-webkit-scrollbar {
+    display: none; /* Desactiva la barra decorativa en Chrome, Safari y navegadores webkit */
+}
+.hide-scrollbar {
+    -ms-overflow-style: none; /* Desactiva en IE y Edge antiguo */
+    scrollbar-width: none; /* Desactiva en Firefox estándar */
+}
+
+/* --- 6. ANIMACIONES DE INTERSECCIÓN (APARICIÓN AL HACER SCROLL - FADE IN) --- */
+
+/* La clase fundamental: cualquier elemento con .fade-section estará preparado para una animación */
+.fade-section {
+    opacity: 0; /* Oculto inicialmente de la interfaz visual */
+    transition: all 1000ms ease-out; /* Una animación suave de 1 segundo de duración al cambiar estado */
+    will-change:
+        transform, opacity; /* Sugerencia fuerte para la GPU sobre qué se animará */
+}
+
+/* Variante: Oculto abajo. Al aparecer, subirá a su lugar. */
+.fade-up {
+    transform: translateY(
+        3rem
+    ); /* Empuja el elemento 3 rem (aprox 48px) hacia abajo temporalmente */
+}
+/* Variante: Oculto a la izquierda. */
+.fade-left {
+    transform: translateX(-3rem); /* Lo empuja hacia la izquierda */
+}
+/* Variante: Oculto a la derecha. */
+.fade-right {
+    transform: translateX(3rem); /* Lo empuja hacia la derecha */
+}
+/* Variante: Oculto más pequeño desde el centro. */
+.fade-none {
+    transform: scale(0.95); /* Lo achica a un 95% de su tamaño total real */
+}
+
+/* LA MAGIA: Esta clase la añade el archivo (js/main.js) cuando el usuario baja y la sección se vuelve visible
+   en la pantalla. Remueve las manipulaciones y lo devuelve a su punto neutro u origen natural. */
+.fade-section.is-visible {
+    opacity: 1; /* Se vuelve opaco o totalmente visible */
+    transform: translate(0) scale(1); /* Borra cualquier traslado (X o Y) y escala de vuelta a (1) 100% de tamaño */
+}
+
+/* --- 7. OPTIMIZACIÓN EN RENDIMIENTO Y CARGA (RENDERING) --- */
+/* Esta regla aplaza o posterga el renderizado costoso (dibujado) del navegador de las etiquetas <section>
+    que AUN NO ESTÁN VISIBLES en la pantalla, excluyendo el '<section id="hero">' de arriba que siempre se debe ver
+    de forma instantánea. */
+section:not(#hero) {
+    content-visibility: auto; /* Da permiso al navegador para demorar pintado real del contenido. Funciona de maravilla en Edge / Chrome */
+    contain-intrinsic-size: auto 1000px; /* Tamaño supuesto referencial temporal de 1000px de altura para no romper el calculo de largo de la barra scroll */
+}
