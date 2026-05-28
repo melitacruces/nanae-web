@@ -1,9 +1,9 @@
-# 🚀 Nanae Web
+# 🚀 Dossier de Nanae
 
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![HTML](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 > **Sitio web oficial de Nanae, artista y compositora chilena independiente. Una experiencia web retro-futurista e inmersiva para explorar su música, videos y arte visual.**
 
@@ -11,7 +11,7 @@
 
 ## ▶️ Live Preview
 
-**🔗 [Sitio Web Oficial de Nanae](https://nanae.cl)**
+**🔗 [Visitar Sitio Web](https://nanae.cl)**
 
 ---
 
@@ -33,17 +33,14 @@
 
 Este proyecto es el sitio web oficial y portafolio musical de **Nanae**, una artista y compositora independiente de Chile. La aplicación web sirve como punto de encuentro centralizado para su comunidad y prensa, ofreciendo una experiencia inmersiva para descubrir su música, videoclips oficiales, presentaciones acústicas, y una galería de sus sesiones de fotos.
 
-Desarrollado con un enfoque ágil y centrado en la estética Y2K, el sitio web proporciona una navegación fluida entre sus secciones clave (Biografía, Música, Videos, Galería, Equipo y Contacto). También incluye integración directa con las principales plataformas de distribución musical digital (Spotify, Apple Music, YouTube Music y Deezer), permitiendo a los oyentes acceder al contenido de manera inmediata y nativa.
-
 ---
 
 ## ✨ Características Principales
 
-- **Estética Y2K Retro-futurista:** Interfaz responsiva decorada con gradientes radiales fijos, paneles translúcidos con efecto de vidrio esmerilado (*glassmorphism*) y bordes dinámicos iluminados con luces neón interactivas.
 - **Discografía Interactiva y Adaptable:** Carrusel de canciones horizontal diseñado para ofrecer un control de desplazamiento fluido tanto mediante interacciones táctiles en móviles como a través de botones de navegación inteligente en computadores de escritorio.
-- **Portafolio Audiovisual y Acústicos:** Integración optimizada de reproductores de video responsivos (YouTube embeds) para videoclips oficiales (*Hilos de Ternura*), videos con letras (*Amanecer Contigo*), visualizers (*Señales*) y sesiones en acústico.
-- **Animaciones y Rendimiento Optimizado:** Uso de `Intersection Observer` para aplicar efectos de aparición y transición coordinados (*fade-in sections*) cuando los elementos entran en pantalla, combinado con la propiedad `content-visibility: auto` para mejorar el rendimiento del dibujado del navegador en secciones no visibles.
-- **Sección de Equipo y Contacto:** Presentación del equipo creativo del proyecto y botones de contacto rápido para contratación (*booking*) y colaboraciones directas.
+- **Portafolio Audiovisual y Acústicos:** Integración optimizada de reproductores de video responsivos (YouTube embeds) para videoclips oficiales y sesiones en acústico.
+- **Animaciones y Rendimiento Optimizado:** Uso de `Intersection Observer` para aplicar efectos de aparición y transición coordinados (_fade-in sections_) cuando los elementos entran en pantalla, combinado con la propiedad `content-visibility: auto` para mejorar el rendimiento del dibujado del navegador en secciones no visibles.
+- **Sección de Equipo y Contacto:** Presentación del equipo creativo del proyecto y botones de contacto rápido para contratación (_booking_) y colaboraciones directas.
 
 ---
 
@@ -53,7 +50,6 @@ Desarrollado con un enfoque ágil y centrado en la estética Y2K, el sitio web p
 
 - **Core:** HTML5 Semántico y JavaScript (Vanilla JS moderno y ligero, sin dependencias de frameworks).
 - **Estilos:** Tailwind CSS v3.4.17 (para maquetación responsiva rápida) y CSS3 puro (`css/styles.css` para fuentes importadas, efectos de sombras con brillo neón y texturas tridimensionales en títulos).
-- **Tipografías:** Fuentes web de Google Fonts: *Syncopate* (estilo futurista Y2K para subtítulos), *Space Grotesk* (cuerpo de texto moderno) y *Sarina* (estilo manuscrito elegante para marcas de agua y firma).
 - **Íconos:** FontAwesome Icons v6.5.1 (cargados mediante CDN de alto rendimiento).
 - **SEO & Metadatos:** Metatags SEO detallados, etiquetas Open Graph (para redes sociales) y estructuración de datos JSON-LD bajo el estándar de Schema.org para el tipo `MusicGroup`.
 
@@ -65,13 +61,13 @@ El sitio web adopta una estética inmersiva de corte retro-futurista con influen
 
 ### Paleta de Colores
 
-| Color             | Hexadecimal | Uso principal                                  |
-| :---------------- | :---------- | :--------------------------------------------- |
-| **Primario**      | `#02040A`   | Fondo principal del sitio y bases de tarjetas. |
-| **Secundario**    | `#0A1945`   | Gradiente superior del fondo para efecto radial.|
-| **Acento/Alerta** | `#38BDF8`   | Resplandores neón, bordes interactivos y hover.|
-| **Texto Base**    | `#EDF0E4`   | Títulos principales y tipografía destacada.    |
-| **Texto Secundario**| `#CBD5E1` | Párrafos generales y descripciones breves.     |
+| Color                | Hexadecimal | Uso principal                                    |
+| :------------------- | :---------- | :----------------------------------------------- |
+| **Primario**         | `#02040A`   | Fondo principal del sitio y bases de tarjetas.   |
+| **Secundario**       | `#0A1945`   | Gradiente superior del fondo para efecto radial. |
+| **Acento/Alerta**    | `#38BDF8`   | Resplandores neón, bordes interactivos y hover.  |
+| **Texto Base**       | `#EDF0E4`   | Títulos principales y tipografía destacada.      |
+| **Texto Secundario** | `#CBD5E1`   | Párrafos generales y descripciones breves.       |
 
 ### Tipografía
 
@@ -126,6 +122,7 @@ El proyecto incluye scripts configurados en el archivo `package.json` para facil
 
 - **Compilar en tiempo de desarrollo (Watch):**
   Monitorea los cambios realizados en el archivo de entrada `css/tailwind.input.css` y compila de forma automática el archivo final `css/tailwind.css`:
+
   ```bash
   npm run watch:css
   ```
@@ -150,12 +147,10 @@ Dado que se trata de un sitio web estático (compuesto únicamente de archivos `
 
 ## 📧 Contacto
 
-Conéctate con el equipo creativo o solicita información formal:
+Si tienes alguna pregunta o deseas colaborar en algún proyecto, no dudes en ponerte en contacto:
 
-- **Booking & Shows:** [booking@nanae.cl](mailto:booking@nanae.cl) — Festivales, conciertos en vivo y eventos.
-- **Prensa & Colaboraciones:** [contacto@nanae.cl](mailto:contacto@nanae.cl) — Medios de comunicación y contacto general.
-- **Redes Sociales:**
-  - Instagram: [@nanaevsh](https://www.instagram.com/nanaevsh/)
-  - X (Twitter): [@Nanaevsh](https://x.com/Nanaevsh)
-  - YouTube: [@nanaevsh](https://www.youtube.com/@nanaevsh)
-  - Linktree: [Nanaevsh](https://linktr.ee/Nanaevsh)
+- **Nombre:** Luis Andrés Melita Cruces
+- **Email:** [melitacruces@gmail.com](mailto:melitacruces@gmail.com)
+- **LinkedIn:** [linkedin.com/in/melitacruces](https://linkedin.com/in/melitacruces)
+- **GitHub:** [github.com/melitacruces](https://github.com/melitacruces)
+- **Ubicación:** Concepción, Chile
