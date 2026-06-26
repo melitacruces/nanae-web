@@ -68,9 +68,9 @@ El sitio web adopta una estética inmersiva de corte retro-futurista con influen
 
 ### Tipografía
 
-- **Títulos (Manuscrito):** `Sarina` (cursiva)
-- **Títulos (Y2K / Futurista):** `Syncopate` (sans-serif de ancho expandido)
-- **Cuerpo de texto:** `Space Grotesk` (sans-serif moderna de alta legibilidad)
+- **Títulos (Manuscrito):** `Sarina` (cursiva).
+- **Títulos (Y2K / Futurista):** `Syncopate` (sans-serif de ancho expandido).
+- **Cuerpo de texto:** `Space Grotesk` (sans-serif moderna de alta legibilidad).
 
 ---
 
@@ -78,18 +78,18 @@ El sitio web adopta una estética inmersiva de corte retro-futurista con influen
 
 ```text
 📂 nanae-web
- ┣ 📂 assets              # Recursos multimedia
- ┃ ┗ 📂 img               # Portadas de sencillos, fotos de prensa, avatares del equipo y logos
- ┣ 📂 css                 # Hojas de estilo del sitio
- ┃ ┣ 📜 styles.css        # Reglas personalizadas, fuentes, efectos de neón y animaciones
- ┃ ┣ 📜 tailwind.css      # Estilos compilados y optimizados de Tailwind
- ┃ ┗ 📜 tailwind.input.css # Archivo de entrada para compilar Tailwind
- ┣ 📂 js                  # Código lógico interactivo
- ┃ ┗ 📜 main.js           # Efecto de navbar, observador de scroll y lógica de carruseles
- ┣ 📜 index.html          # Estructura principal y contenido indexable del sitio
- ┣ 📜 package.json        # Archivo de configuración de dependencias de desarrollo y scripts
- ┣ 📜 tailwind.config.js  # Reglas y configuraciones de personalización de Tailwind CSS
- ┗ 📜 TEMPLATE_README.md  # Plantilla original de referencia
+ ┣ 📂 assets              # Recursos multimedia.
+ ┃ ┗ 📂 img               # Portadas de sencillos, fotos de prensa, avatares del equipo y logos.
+ ┣ 📂 css                 # Hojas de estilo del sitio.
+ ┃ ┣ 📜 styles.css        # Reglas personalizadas, fuentes, efectos de neón y animaciones.
+ ┃ ┣ 📜 tailwind.css      # Estilos compilados y optimizados de Tailwind.
+ ┃ ┗ 📜 tailwind.input.css # Archivo de entrada para compilar Tailwind.
+ ┣ 📂 js                  # Código lógico interactivo.
+ ┃ ┗ 📜 main.js           # Efecto de navbar, observador de scroll y lógica de carruseles.
+ ┣ 📜 index.html          # Estructura principal y contenido indexable del sitio.
+ ┣ 📜 package.json        # Archivo de configuración de dependencias de desarrollo y scripts.
+ ┣ 📜 tailwind.config.js  # Reglas y configuraciones de personalización de Tailwind.
+ ┗ 📜 TEMPLATE_README.md  # Plantilla original de referencia.
 ```
 
 ---
